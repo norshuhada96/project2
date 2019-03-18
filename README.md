@@ -12,6 +12,11 @@ const doubleaisle = [2,5,8,11,14,17,20,23,26,29];
 const doublewindow = [3,6,9,12,15,18,21,24,27,30];
 var customer = 30;
 
+//const single = [{ number: 1, number: 4, number: 7, number: 10, number: 13, number: 16, number: 19, number: 22, number: 25, number: 28}];
+const doubleaisle = [{ number: 2, number: 5, number: 8, number: 11, number: 14, number: 17, number: 20, number: 23, number: 26, number: 29}]; 
+const doublewindow = [{ number: 3, number: 6, number: 9, number: 12, number: 15, number: 18, number: 21, number: 24, number: 27, number: 30}]; 
+
+
 // (function(){
     
 // }())
@@ -40,6 +45,18 @@ console.log('Attention!! Press Ctrl + \'C\' to exit at any time')
         }
         rl.close();
     })
+    
+  //function booking() {
+    var found = single.some(customer => customer.number === selectedseat);
+    single.push({number: 0});
+
+
+    if (!found){
+        console.log("This seat is unavailable. Please select a different seat.");
+        <TextInput>enter seat number etc etc </TextInput>
+    }
+    return single;
+}  
 
 
 
